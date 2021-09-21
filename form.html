@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<link rel="stylesheet" href="style.css">-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <title>FORMULARIO DE CONTACTO</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            font-size: 16px;
+        }
+        
+        body {
+            background-color: #082032;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+           
+        .nave{
+            text-align: center;
+            height: 39px;
+        }
+
+
+        a{
+        text-decoration: none;
+        display: inline-block;
+        text-align: center;
+        color:#f7fcf9;
+        font-weight: bold;
+        margin:0 10px;
+        font-size: 16px;
+        padding: 10px 10px;
+        
+    }
+    a:hover{
+        color:#082032;
+        background-color: #FF4C29;
+        width: 140px;
+
+
+       
+    }
+
+     /*menu de navegación*/
+        
+        
+        
+        /*Formulario*/
+        
+        .form {
+            border-radius: 10px;
+            padding: 20px;
+            margin: 50px auto;
+            width: 70%;
+            height: auto;
+            background-color: #FF4C29;;
+            border-radius: 16px;
+            
+        }
+        
+        .formulario {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+            margin: 40px 0;
+        }
+        
+        h1 {
+            font-size: 2em;
+            color: #fdfffe;
+            text-align: center;
+        }
+        /*PARTE IZQUIERDA*/
+        
+        .conten-iz {
+            margin-left: 40px;
+            color: #0e0c0c;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        
+        p {
+            margin-bottom: 15px;
+        }
+        
+        .comunicacion {
+            color: #fafafa;
+            font-size: 1.4em;
+            margin-bottom: 10px;
+        }
+        
+        .red {
+            color: #fcfdfc;
+            font-size: 2em;
+            margin: 30px 15px;
+        }
+        /*PARTE DERECHA*/
+        
+        .conten-der {
+            margin-left: 20px;
+        }
+        
+        input {
+            margin-bottom: 20px;
+        }
+        
+        input,
+        textarea {
+            margin-bottom: 20px;
+            width: 80%;
+            padding: 20px;
+            background-color: transparent;
+            border: none;
+            outline: none;
+            border-bottom: 2px solid #feffff;
+            color: #ffffff;
+            resize: none;
+        }
+        
+        button {
+            border-style: none;
+            margin-top: 20px;
+            width: 150px;
+            padding: 15px;
+            background-color: #082032;
+            color: #ffffff;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        
+        
+       
+        @media (max-width: 500px) {
+            .formulario {
+                grid-template-columns: repeat(1, 1fr);
+            }
+            .red {
+                color: #eef8f2;
+                font-size: 2em;
+                margin: 30px 10px;
+            }
+            input,
+            textarea {
+                margin-left: 5%;
+                margin-bottom: 20px;
+                width: 80%;
+                padding: 20px;
+                background-color: transparent;
+                border: none;
+                outline: none;
+                border-bottom: 2px solid #f8fcf9;
+                color: #ffffff;
+            }
+            @media (max-width: 400px) {
+                h1 {
+                    font-size: 1.6em;
+                    color: #f4f8f6;
+                    margin: auto;
+                }
+                .conten-iz,
+                .conten-der {
+                    margin-left: auto;
+                }
+            }
+        }
+
+        @media screen and (max-width:800px){
+
+
+
+                
+               
+               #bare{
+                           
+                           width: 100%;
+                           height: 100px;
+                           position: fixed;
+                           top: 0px;
+                           background-color: rgb(148, 120, 7);
+                           z-index: 1000000;
+                           display: none; 
+                           size: 20px;                         
+                      
+       
+               }
+               .icon-stack{
+                           display: block;
+                           color: rgb(167, 139, 31);
+                           font-size: 50px;
+                           left: 20px;
+                           margin-top: 20px;
+                           position: absolute;
+                           z-index: 1000000000;
+               }
+                      
+       
+                  
+                           
+                           
+       
+       
+                  header{
+       
+                          height: 60px;
+                          position: fixed;
+                          width: 100%;
+                          opacity:0.8;
+                          top: 0px;
+                          z-index: 10;
+                      }
+       
+                 .nave{
+                          width: 70%;
+                          height: 550px;
+                          position: fixed;
+                          margin: 0px;
+                          transform: translateX(-100%);
+                          text-align: center;
+                          transition: all 0.8 ease-in;
+       
+                      }
+       
+                a:hover{
+                          width: 280px;
+                          height: 40px;
+                      }
+                      
+                .lol{
+                       color: rgb(179, 61, 18);
+                       padding-top: 70px;
+                       padding: text 60px;
+                       position: fixed;
+                       font-size: 35px;
+                       text-align: justify;
+                       float: left;
+       
+                      }
+       
+                 #bare:checked ~ .nave{
+                          transform: translate(0%);
+                          transition: all 0.4% ease-out;
+                          background-color: rgb(19, 15, 15);
+                          text-align:left;
+                          width: 300px;
+                          
+                      }
+                      
+                 header .nave ul il{
+                          display: block;
+                          border-bottom: rgba(215, 40, 40, 0.5);
+                          padding: 0px 10px;
+                          width: 300px;
+                          text-align:left;
+                          margin-top: 20%;
+                      } 
+
+
+                label{
+                        size: 70px;
+                        color: #28B463;
+                      }
+                      
+                   }
+       
+    </style>
+</head>
+
+<body>
+    <div class="menu-btn">
+        <header class="cabeza" >
+              
+            <input type="checkbox" id=bare hidden>
+            <label  for=bare  ><i class="fas fa-bars"></i><a href="#" class="lol"></a></label>
+             
+             <div class="nave" >
+                     
+                         <ul>
+                                            
+                             <il><a href=#>PRINCIPAL</a></il>
+                             <il><a href="#">NOSOTROS</a></il>
+                             <il><a href="#">CURSOS</a></il>
+                             <il><a href="#">OFERTAS</a></il>
+                             <il><a href="#">SOLICITUD</a></il>
+                                 
+                                 
+                         </ul><br>
+                     
+             </div>
+         </nav>
+     </header> <br>
+        </nav>
+        <div class="form">
+            <h1>CONTACTO</h1>
+            <div class="formulario">
+                <div class="conten-iz">
+                    <i class="fas fa-envelope-open-text comunicacion"></i>
+                    <p class="email">consultas@gmail.com</p>
+                    <i class="fas fa-map-marker-alt comunicacion"></i>
+                    <p>Av.16 de Julio Nro. B-Comayagua - Honduras</p>
+                    <i class="fas fa-phone comunicacion"></i>
+                    <p>32-69-58-78</p>
+                    <p class="numero2 ">32-69-58-78</p>
+                    <i class="fab fa-facebook red "></i>
+                    <i class="fab fa-whatsapp red "></i>
+                    <i class="fab fa-linkedin red "></i>
+
+                </div>
+                <div class="conten-der ">
+                    <form action=" ">
+                        <input type="text " class="uno " autofocus placeholder="Nombre "><br>
+                        <input type="tel " class="uno " placeholder="Telefono "><br>
+                        <input type="email " class="uno " placeholder="E-MAIL "><br>
+                        <textarea name="mensaje " id="mensaje " cols="33 " rows="10 " placeholder="Mensaje "></textarea>
+                    </form>
+                </div>
+                <button clase="btn ">ENVIAR</button>
+            </div>
+        </div>
+
+</body>
+
+</html>
